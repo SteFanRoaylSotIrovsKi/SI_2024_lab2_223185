@@ -8,9 +8,16 @@
 
 
 ### Цикломатската комплексност
-Цикломатската комплексност е 10, бидејќи бројот на предикати јазли во кодот е 9 (7 if услови и 2 for loops) и според формулата P+1, каде што P=9 го добиваме резулатот е 10.
+Цикломатската комплексност е 10, бидејќи бројот на предикати јазли во кодот е 9 и според формулата P+1, каде што P=9 го добиваме резулатот 10.
 
-### Тест случаи според критериумот Every statement
+### Every statement
 1. Ако allItems е null фрла исклучок. Добиваме порака "allItems list can't be null!". 
-2. Кога имаме валидно име и немаме баркод, добиваме исклучок RuntimeException("No barcode!")
-3. 
+2. Кога имаме баркод со вредност null, добиваме исклучок RuntimeException("No barcode!")
+3. Кога имаме баркод со некоја вредност, но содржи некој знак што не е валиден, добиваме порака "Invalid character in item barcode!"
+4. Доколку имаме повеќе
+
+### Multiple Condition
+-(price=5000, barcode="0274" discount=0.20)=True & True & True=True
+-(price=5000, barcode="2274" discount=0.20)=True & True & False=False
+-(price=5000, barcode="2274" discount=-1)=True & False & False(not relevent)=False
+-(price=300, barcode="2274" discount=-1)=False & False(not relevent) & False(not relevent)=False
