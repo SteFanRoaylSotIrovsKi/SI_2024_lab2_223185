@@ -12,8 +12,8 @@
 
 ### Every statement
 1. Ако allItems е null фрла исклучок. Добиваме порака "allItems list can't be null!". 
-2. Кога имаме баркод со вредност null, добиваме исклучок RuntimeException("No barcode!")
-3. Кога имаме баркод со некоја вредност, но содржи некој знак што не е валиден, добиваме порака "Invalid character in item barcode!"
+2. Кога имаме баркод со вредност null, добиваме исклучок RuntimeException("No barcode!")->newItem("flag", null, 200, 0) 
+3. Кога имаме баркод со некоја вредност, но содржи некој знак што не е валиден, добиваме порака "Invalid character in item barcode!"->newItem("helmet", 58ke2v, 250, 0)
 4. Доколку имаме повеќе
 
 ### Multiple Condition
