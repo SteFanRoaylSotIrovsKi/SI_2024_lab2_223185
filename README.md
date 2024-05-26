@@ -4,7 +4,8 @@
 
 ### Control Flow Graph
 
-![SI_LAB2.drawio.png](SI_LAB2.drawio.png)
+![CFG drawio (1)](https://github.com/SteFanRoaylSotIrovsKi/SI_2024_lab2_223185/assets/166416103/852ea3fc-4078-4903-bf88-8f2be79870da)
+
 
 ### Цикломатската комплексност
 Цикломатската комплексност е 10, бидејќи бројот на предикати јазли во кодот е 9 (7 if услови и 2 for loops) и според формулата P+1, каде што P=9 го добиваме резулатот е 10.
