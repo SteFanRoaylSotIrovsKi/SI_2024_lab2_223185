@@ -17,7 +17,7 @@
 4. Доколку имаме повеќе
 
 ### Multiple Condition
--(price=5000, barcode="0274" discount=0.20)=True & True & True=True
--(price=5000, barcode="2274" discount=0.20)=True & True & False=False
--(price=5000, barcode="2274" discount=-1)=True & False & False(not relevent)=False
--(price=300, barcode="2274" discount=-1)=False & False(not relevent) & False(not relevent)=False
+#### -(price=5000, barcode="0274" discount=0.20)=True & True & True=True
+#### -(price=5000, barcode="2274" discount=0.20)=True & True & False=False
+#### -(price=5000, barcode="2274" discount=-1)=True & False & False(not relevent)=False
+#### -(price=300, barcode="2274" discount=-1)=False & False(not relevent) & False(not relevent)=False
